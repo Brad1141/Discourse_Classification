@@ -1,0 +1,12 @@
+Questions
+- what is the prediction string? 
+    - the numbers in the prediction string represent the words in the sequence
+    - only apply to the corresponding document
+    - rely on prediction string as the target column, not discourse start & end
+
+- why is the test only 5 txt files?
+    - probably tested on a private list as well
+
+Possible approaches
+- ner token classification
+- word2vec (idk)
