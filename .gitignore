@@ -1,4 +1,3 @@
 test/
 train/
-sample_submission.csv
-train.csv
+*.csv

@@ -10,3 +10,6 @@ Questions
 Possible approaches
 - ner token classification
 - word2vec (idk)
+
+To Do
+- align labels with tokens
