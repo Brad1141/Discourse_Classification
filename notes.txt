@@ -15,3 +15,4 @@ To Do
 - align labels with tokens v/
 - change the ner_tags from an array of strings to an array of integers v/
 - why do some of the inputs give errors?
+    - because ner_tags are less than the tokens (caused by '.' and ',' being added to tokens)
