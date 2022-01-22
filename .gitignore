@@ -2,3 +2,5 @@ test/
 train/
 *.csv
 model/
+model1/
+tokenizer/
