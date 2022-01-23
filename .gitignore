@@ -4,3 +4,4 @@ train/
 model/
 model1/
 tokenizer/
+bert-finetuned-ner/
