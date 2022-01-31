@@ -19,3 +19,6 @@ To Do
 
 Stats
 - about 3 hours to run 10,000 text files
+
+Result Analysis (wait until kaggle to do Analysis - focus on school reseach)
+
