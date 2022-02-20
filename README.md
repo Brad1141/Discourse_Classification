@@ -15,3 +15,4 @@ First, the model divides the corpus into distinct discourse elements and then th
 - Concluding Statment: a concluding statement that restates the claims
 
 ### Example
+<img src="vidSLAM_example2.png" width="400" height="300">
