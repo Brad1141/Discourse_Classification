@@ -2,7 +2,7 @@
 
 
 ### Description
-Discourse_classification is a BERT model designed to identify different discourse elemenents in a student's writing. The model is fine-tuned for NER Token Classification and uses the Kaggle [Feedback Prize - Evaluating Student Writing](https://www.kaggle.com/c/feedback-prize-2021/data) dataset for training.
+Discourse_classification is a BERT model designed to identify different discourse elements in a student's writing. The model is fine-tuned for NER Token Classification and uses the Kaggle [Feedback Prize - Evaluating Student Writing](https://www.kaggle.com/c/feedback-prize-2021/data) dataset for training.
 
 #### All Discourse Elements (NER Token Classifiers)
 First, the model divides the corpus into distinct discourse elements and then the elements are classified as one of the following...
@@ -15,4 +15,27 @@ First, the model divides the corpus into distinct discourse elements and then th
 - Concluding Statment: a concluding statement that restates the claims
 
 ### Example
-<img src="vidSLAM_example2.png" width="400" height="300">
+<img src="example1.png" width="800" height="300">
+
+### Run in browser
+1. Go to website https://huggingface.co/brad1141/bert-finetuned-ner
+2. Under **Hosted inference API**, paste the corpus that you wish to evaluate 
+
+### Run on computer
+*following code also available in the **runModel.ipynb** file*
+```python
+from transformers import pipeline
+
+model_checkpoint = "brad1141/bert-finetuned-ner"
+token_classifier = pipeline(
+    "token-classification", model=model_checkpoint, aggregation_strategy="simple"
+)
+
+# code for evaluating a single text
+predicts = token_classifier("YOUR TEXT HERE")
+for p in predicts:
+    print(p)
+
+```
+### Kaggle Submission
+To evaluate your texts and create a csv file in Kaggle [Submission file format](https://www.kaggle.com/c/feedback-prize-2021/overview/evaluation), run the file **kaggleRun.ipynb** with your own text folder
