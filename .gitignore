@@ -5,3 +5,5 @@ model/
 model1/
 tokenizer/
 bert-finetuned-ner/
+bert-model-ner/
+longformer_v1/
