@@ -2,7 +2,7 @@
 
 
 ### Description
-Discourse_classification is a Longformer model designed to identify different discourse elements in a student's writing. The model is fine-tuned for NER Token Classification and uses the [PERSUADE](https://www.kaggle.com/c/feedback-prize-2021/data) dataset for training.
+Discourse_classification is a Longformer model fine-tuned to identify different discourse elements in a student's writing. The model is fine-tuned for NER Token Classification and uses the [PERSUADE](https://www.kaggle.com/c/feedback-prize-2021/data) dataset for training.
 
 #### Paper - [Identifying discourse elements in writing by fine-tuning BERT, LongFormer, and GPT-2 models for NER Token Classification](https://github.com/Brad1141/Discourse_Classification/blob/master/Research_Paper.pdf)
 
